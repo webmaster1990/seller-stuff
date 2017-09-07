@@ -7,6 +7,9 @@
   height: 80px;
 }
 
+.mainApp {
+  padding-top: 50px;
+}
 .App-header {
   background-color: #222;
   height: 150px;
@@ -16,6 +19,36 @@
 
 .App-intro {
   font-size: large;
+}
+
+.left {
+  float: left;
+  height: 60vh;
+  width: 30%;
+}
+.left textarea {
+  width:100%;
+  height:100%;
+}
+
+.right {
+  float: left;
+  height: 60vh;
+  width: 50%;
+  text-align: left;
+}
+.right .w50{
+  width:50%;
+  float:left;
+  text-align: left;
+}
+.right .w50 ul {
+  list-style: none;
+}
+
+.close {
+  margin-right: 10px;
+  cursor:pointer;
 }
 
 @keyframes App-logo-spin {
