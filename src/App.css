@@ -29,6 +29,9 @@
 .left textarea {
   width:100%;
   height:100%;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
 }
 
 .right {
@@ -38,17 +41,38 @@
   text-align: left;
 }
 .right .w50{
-  width:50%;
-  float:left;
+  width: 46%;
+  float: left;
   text-align: left;
+  margin-left: 4%;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 .right .w50 ul {
   list-style: none;
+  padding: 0;
 }
 
 .close {
   margin-right: 10px;
   cursor:pointer;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+input[type=button] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 @keyframes App-logo-spin {
