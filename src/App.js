@@ -167,6 +167,7 @@ class App extends Component {
     uniquePhrases =  _.orderBy(uniquePhrases, ['name'],['asc']);
     return (
       <div className="App">
+        <h2 style={{marginTop:15}}>KEYWORDS SELECTOR</h2>
         <div className="mainApp">
           <div className="left">
             <textarea value={phraseText} onChange={(e)=>this.setState({phraseText: e.target.value})}> </textarea>
