@@ -118,6 +118,7 @@ class App extends Component {
     this.setState({
       uniquePhrases,
       uniqueWords,
+      selectedWords: [],
     })
   }
 
@@ -162,7 +163,7 @@ class App extends Component {
   render() {
     let {phraseText, uniqueWords, selectedWords} = this.state;
     let uniquePhrases = this.getUniquePhrase();
-    uniqueWords =  _.orderBy(uniqueWords, ['name'],['asc']);
+    uniqueWords =  _.orderBy(uniqueWords, ['count'],['desc']);
     uniquePhrases =  _.orderBy(uniquePhrases, ['name'],['asc']);
     return (
       <div className="App">
@@ -200,7 +201,7 @@ class App extends Component {
                     <li key={index}>
                       <span className="close" onClick={()=>this.removePhrase(i.name)}>X</span>
                       <label>
-                        {i.name} ({i.count})
+                        {i.name}
                       </label>
                     </li>
                   ))
