@@ -45,8 +45,6 @@
   float: left;
   text-align: left;
   margin-left: 4%;
-  max-height: 80vh;
-  overflow-y: scroll;
 }
 .right .w50 ul {
   list-style: none;
@@ -79,3 +77,39 @@ input[type=button] {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.use-keyword {
+  float: left;
+  width: 63%;
+  margin-left: 51px;
+  text-align: left;
+}
+
+.textbox {
+  width: 100%;
+  height: 75px;
+  border-radius: 7px;
+}
+
+textarea.disabled {
+  height:200px;
+}
+
+.mini-textbox {
+  width: 94%;
+  height: 66px;
+}
+.m-t {
+  margin-top: 20px;
+}
+ .w100 {
+   width: 100% !important;
+ }
+
+ fieldset.bullets {
+   height:600px;
+ }
+
+ .hide {
+   display: none;
+ }
